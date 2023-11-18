@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+header ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.contacts {
+    background-color: #e6bd43;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+video {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+#video {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+     
+}
+
+.headline {
+    display: center;
+    justify-content: center;
+}
+
+.headline a {
+    text-decoration: none;
+}
+
+.read-more {
+    padding: 1rem;
+    background-color: #e6bd43;
+    border-radius: 5px;
+    color: black;
+}
+    
