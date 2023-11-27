@@ -1,4 +1,17 @@
-  @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap');
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
 
 body {
     font-family: 'Hind Siliguri', sans-serif;
@@ -36,7 +49,7 @@ header ul li a {
 .contact {
     background-color: #e6bd43;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 2px;
     transition: all 0.1s linear;
 }
 
@@ -52,13 +65,22 @@ header ul li a {
     font-weight: bold;
 }
 
+.tilbake {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    color: #fff;
+    background-color: black;
+}
+
 .headline {
     justify-content: center;
     text-align: center;
     position: relative;
     overflow: hidden;
     height: 320px;
-    padding-top: 1rem;
+    padding: 1rem 0;
 }
 
 .headline p {
@@ -79,13 +101,13 @@ header ul li a {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    opacity: 0.75;
+    opacity: 0.5;
 }
 
 .read-more {
     padding: 1rem;
     background-color: #e6bd43;
-    border-radius: 5px;
+    border-radius: 2px;
     color: black;
     transition: all 0.1s linear;
 }
@@ -97,8 +119,8 @@ header ul li a {
 
 .subheading {
     text-align: center;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 2rem;
+    margin: 2rem;
 }
 
 .sec1 {
@@ -108,12 +130,12 @@ header ul li a {
     background-color: #e6bd43;
 }
 
-.right {
+.service-right {
     width: 50%;
     padding: 1rem;
 }
 
-.right p {
+.sec1 img {
     padding: 1rem;
 }
 
@@ -124,13 +146,19 @@ header ul li a {
     color: black;
 }
 
-.services {
+.read-more-about-us:hover {
+    background-color: black;
+    color: #e6bd43;
+}
+
+#services {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 4rem 0;
 }
 
-.services article {
+#services article {
     display: flex;
     flex-direction: column;
     max-width: 200px;
@@ -138,21 +166,30 @@ header ul li a {
     align-items: center;
 }
 
-.services article i {
+#services article i {
     scale: 200%;
 }
 
 .signup {
     background-color: darkgray;
-    padding: 1rem;
+    padding: 3rem 0;
     text-align: center;
-    border: none;
-    padding: 1rem;
 }
 
-#email-signup {
+.sign-me-up {
     background-color: #e6bd43;
     color: #252525;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.sign-me-up:hover {
+    background-color: black;
+    color: #e6bd43;
+}
+
+#epost {
+    height: 40px;
 }
 
 footer {
@@ -160,6 +197,7 @@ footer {
     justify-content: space-between;
     background-color: #252525;
     color: #fff;
+    padding: 1rem;
 }
 
 footer ul {
@@ -179,14 +217,196 @@ footer ul li {
     padding: 1rem;
 }
 
-    
+.hero {
+    background-image: url(../img/ressurser/pen-4337521_1200.jpg);
+    background-size: cover;
+    background-color: #ffffff7e;
+    background-blend-mode: lighten;
+    width: 100%;
+    height: 320px;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.port-nav {
+    margin: 1rem;
+}
+
+.port-nav h2 {
+    width: 100%;
+    border-bottom: 3px solid #e6bd43;
+    text-align: start;
+}
+
+.port-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.port-nav a:hover {
+    background-color: black;
+    color: #e6bd43;
+}
+
+#Branding {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#Branding h2 {
+    width: 100%;
+    border-bottom: 3px solid #e6bd43;
+    text-align: start;
+}
+
+#Design {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#Design h2 {
+    width: 100%;
+    border-bottom: 3px solid #e6bd43;
+    text-align: start;
+}
+
+#Development {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#Development h2 {
+    width: 100%;
+    border-bottom: 3px solid #e6bd43;
+    text-align: start;
+}
+
+.img-1 {
+    height: 350px;
+    width: 350px;
+}
+
+.img-2 {
+    height: 500px;
+    width: 500px;
+}
+
+.port-1 {
+    transition: 0.4s;
+}
+
+.port-1:hover {
+    transform: scale(1.1);
+}
+
+.port-2 {
+    transition: 0.4s;
+}
+
+.port-2:hover {
+    transform: scale(1.05);
+}
+
+.about-headline-img {
+    position: relative;
+}
+
+.about-headline-img img {
+    width: 100%;
+    height: 350px;
+}
+
+ .about-headline {
+    background-color: rgb(255,255,255,0.75);
+    color: black;
+    position: absolute;
+    width: 50%;
+    right: 1rem;
+    top: 1rem;
+    height: 300px;
+    margin: 1rem;
+}
+
+.about-headline p {
+    font-size: small;
+    padding: 0 0.5rem;
+}
+
+.about-headline h1 {
+    margin: 0;
+}
+
+.Get-in-touch {
+    padding: 0.5rem;
+    background-color: #e6bd43;
+    color: black;
+    text-decoration: none;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+}
+
+.services article {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    text-align: center;
+    align-items: center;
+}
+
+.services article i {
+    scale: 200%;
+}
+
+.clients {
+    background-color: #e6bd43;
+    padding: 1rem;
+}
+
+.clients h2 {
+    width: 100%;
+}
+
+.clients article {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+#Contact-us {
+    display: flex;
+    margin: 2rem;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    width: 50%;
+}
+
+.send-message {
+    padding: 0.5rem;
+    background-color: #e6bd43;
+    color: black;
+    text-decoration: none;
+}
 
 
-
-
-
-
-
-
-
-    
+ 
