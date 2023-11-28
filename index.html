@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="img/ressurser/ressurser/logo1.png">
     <script defer src="script.js"></script>
+    <title>Forside</title>
 </head>
 <body>
     <header>
-        <img src="img/ressurser/ressurser/logo1.png" id="Logo">
+        <img src="img/ressurser/ressurser/logo1.png" id="Logo" alt="logo">
         <nav>
         <ul>
             <li><a href="index.html" class="Home">Home</a></li>
             <li><a href="portfolio.html" class="Portfolio">Portfolio</a></li>
             <li><a href="about.html" class="About">About</a></li>
-            <li><a href="#Contact-us" class="contact">Contact</a></li>
+            <li><a href="about.html#Contact-us" class="contact">Contact</a></li>
         </ul>
         </nav>
     </header>
@@ -25,23 +28,23 @@
         <section>
             <h1>Compelling Headline</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Aliquet nec ullamcorper sit amet risus nullam. Vitae et leo duis ut diam. Enim tortor at auctor urna nunc. Mattis aliquam faucibus purus in massa tempor. Facilisi etiam dignissim diam quis enim lobortis</p>
-            <a href="#" class="read-more">Read more about our services</a>
+            <a href="#services" class="read-more">Read more about our services</a>
             <video class=video autoplay muted loop>
                 <source src="img/ressurser/ressurser/mountains.mp4" type="video/mp4">
             </video>
-        </div>
         </section>
+        </div>
         <article class="subheading">
             <h2>Engaging subheading</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Aliquet nec ullamcorper sit amet risus nullam. Vitae et leo duis ut diam. Enim tortor at auctor urna nunc. Mattis aliquam faucibus purus in massa tempor. Facilisi etiam dignissim diam quis enim lobortis</p>
         </article>
         <section class="sec1">
             <img src="img/ressurser/400.png" alt="grå placeholder">
-            <div class="service-right">
-            <h2>About our company</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Aliquet nec ullamcorper sit amet risus nullam. Vitae et leo duis ut diam. Enim tortor at auctor urna nunc. Mattis aliquam faucibus purus in massa tempor. Facilisi etiam dignissim diam quis enim lobortis</p>
-            <a href="#Services" class="read-more-about-us">Read more about us</a>
-            </div>
+            <article class="service-right">
+                <h2>About our company</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Aliquet nec ullamcorper sit amet risus nullam. Vitae et leo duis ut diam. Enim tortor at auctor urna nunc. Mattis aliquam faucibus purus in massa tempor. Facilisi etiam dignissim diam quis enim lobortis</p>
+                <a href="about.html" class="read-more-about-us">Read more about us</a>
+            </article>
         </section>
         <h2>Our services</h2>
         <section id="services">
@@ -68,20 +71,20 @@
         </section>
         <section class="signup">
             <h2>Sign up for our newsletter</h2>
-            <form>
+            <form id="email">
                 <input type="text" id="epost" placeholder="nora@epost.no">
                 <label for="email" class="sign-me-up">sign me up!</label>
             </form>
         </section>
     </main>
     <footer>
-        <img src="img/ressurser/ressurser/logo1.png" id="Logo-footer">
+        <img src="img/ressurser/ressurser/logo1.png" id="Logo-footer" alt="logo">
         <h2>Company copyright 2023</h2>
         <ul>
             <li><i class="fa-brands fa-facebook"></i></li>
             <li><i class="fa-brands fa-instagram"></i></li>
             <li><i class="fa-brands fa-linkedin"></i></li>
         </ul>
-    </footer>
+    </footer>   
 </body>
 </html>
