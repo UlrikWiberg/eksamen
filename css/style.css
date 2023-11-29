@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap');
 
+html {
+    min-width: 375px;
+    max-width: 1600px;
+}
+
 p {
     font-size: 1rem;
 }
@@ -30,6 +35,12 @@ header {
     margin: 1rem;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+}
+
 header ul {
     display: flex;
     flex-direction: row;
@@ -58,7 +69,7 @@ header ul li a {
 }
 
 .contact:hover{
-    background-color: black;
+    background-color: #252525;
     color: #e6bd43;
 }
 
@@ -75,7 +86,8 @@ header ul li a {
     right: 1rem;
     padding: 1rem;
     color: #fff;
-    background-color: black;
+    background-color: #252525;
+    border-radius: 3px;
 }
 
 .headline {
@@ -112,12 +124,12 @@ header ul li a {
     padding: 1rem;
     background-color: #e6bd43;
     border-radius: 2px;
-    color: black;
+    color: #000;
     transition: all 0.1s linear;
 }
 
 .read-more:hover {
-    background-color: black;
+    background-color: #252525;
     color: #e6bd43;
 }
 
@@ -147,12 +159,12 @@ header ul li a {
 .read-more-about-us {
     text-decoration: none;
     padding: 1rem;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid #000;
+    color: #000;
 }
 
 .read-more-about-us:hover {
-    background-color: black;
+    background-color: #252525;
     color: #e6bd43;
 }
 
@@ -172,7 +184,8 @@ header ul li a {
 }
 
 #services article i {
-    scale: 200%;
+    height: 70px;
+    width: 70px;
 }
 
 .signup {
@@ -189,7 +202,7 @@ header ul li a {
 }
 
 .sign-me-up:hover {
-    background-color: black;
+    background-color: #252525;
     color: #e6bd43;
 }
 
@@ -199,6 +212,7 @@ header ul li a {
 
 footer {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: #252525;
     color: #fff;
@@ -212,8 +226,13 @@ footer ul {
 
 footer ul li {
     list-style: none;
-    scale: 200%;
-    padding: 1rem;
+    margin: 1rem;
+}
+
+footer ul li a {
+    color: #fff;
+    height: 100px;
+    width: 100px;
 }
 
 #Logo-footer {
@@ -257,7 +276,7 @@ footer ul li {
 }
 
 .port-nav a:hover {
-    background-color: black;
+    background-color: #252525;
     color: #e6bd43;
     font-weight: bold;
 }
@@ -334,6 +353,7 @@ footer ul li {
 .about-headline-img img {
     width: 100%;
     height: 350px;
+    object-fit: cover;
 }
 
  .about-headline {
@@ -367,7 +387,7 @@ footer ul li {
 
 .Get-in-touch:hover {
     color: #e6bd43;
-    background-color: black;
+    background-color: #252525;
 }   
 
 .services {
@@ -386,7 +406,8 @@ footer ul li {
 }
 
 .services article i {
-    scale: 200%;
+    height: 70px;
+    width: 70px;
 }
 
 .clients {
@@ -407,15 +428,40 @@ footer ul li {
 
 #Contact-us {
     display: flex;
-    margin: 2rem;
+    margin: 0;
+    background-color: lightgray;
+}
+
+.contact-heading {
+    background-color: lightgray;
+    margin: 0;
+    padding: 1rem;
 }
 
 .right {
     width: 50%;
+    margin: 2rem;
 }
 
 .left {
     width: 50%;
+    margin: 2rem;
+}
+
+.name {
+    width: 450px;
+    height: 35px;
+}
+
+.subject {
+    width: 450px;
+    height: 35px;
+}
+
+.message {
+    width: 450px;
+    height: 100px;
+    margin: 0 3rem 2rem 0;
 }
 
 .send-message {
@@ -427,23 +473,38 @@ footer ul li {
 
 .send-message:hover {
     color: #e6bd43;
-    background-color: black;
+    background-color: #252525;
+}
+
+.map {
+    height: 200px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
 
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "main" "footer";
+    }
+
     header {
+        display: flex;
         flex-direction: column;
+        text-align: center;
         align-items: center;
-        margin: 1rem;
     }
 
     header ul {
         flex-direction: column;
+        padding: 1rem 0;
+        margin: 0
     }
 
     #Logo {
-        scale: 1.5;
+        height: 150px;
+        width: 150px;
     }
 
     .video {
@@ -462,11 +523,17 @@ footer ul li {
         display: flex;
         flex-direction: column;
         text-align: center;
-        flex-wrap: nowrap;
     }
 
     .service-right {
         width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sec1 img {
+        height: 300px;
+        width: 300px;
     }
 
     #services {
@@ -474,55 +541,150 @@ footer ul li {
         flex-direction: column;
         flex-wrap: nowrap;
         text-align: center;
+        margin: 0;
     }
 
     #services article {
-        max-width: none;
+        max-width: 100%;
     }
 
     #services article p {
-        font-size: 3rem;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tilbake {
+        right: 3rem;
+        bottom: 3rem;
     }
 
     #Branding {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
     }
 
     #Design {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        margin: 0;
     }
 
     #Development {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        margin: 0;
-    }
-
-    .port-1 {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .port-2 {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
     }
 
     .img-1 {
-        scale: 0.6;
+        width: 300px;
+        height: 300px;
     }
 
     .img-2 {
-        scale: 0.6;
+        width: 300px;
+        height: 300px;;
+    }
+
+    .about-headline {  
+        width: 70%;
+        text-align: center;
+        height: 600px;
+        margin: 2rem;
+    }
+
+    .about-headline-img img {
+        height: 700px;;
+    }
+
+    .clients article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #Contact-us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name {
+        width: 200px;
+    }
+
+    .subject {
+        width: 200px;
+    }
+
+    .message {
+        width: 200px;
+    }
+
+    .contact:hover {
+        background-color: #e6bd43;
+        color: #000;
+        padding: 1rem;
+        border-radius: 2px;
+        transition: all 0.1s linear;
+    }
+
+    .read-more:hover {
+        padding: 1rem;
+        background-color: #e6bd43;
+        border-radius: 2px;
+        color: black;
+        transition: all 0.1s linear;
+    }
+
+    .read-more-about-us:hover {
+        text-decoration: none;
+        padding: 1rem;
+        border: 2px solid black;
+        color: black;
+    }
+
+    .sign-me-up:hover {
+        background-color: #e6bd43;
+        color: #252525;
+        text-decoration: none;
+        padding: 0.5rem;
+    }
+
+    .port-nav a:hover {
+        text-decoration: none;
+        color: black;
+        padding: 0.5rem;
+        margin: 0.2rem;
+        border: 1px solid black;
+        font-size: 16px;
+    }
+
+    .port-1:hover {
+        transform: scale(1);
+    }
+
+    .port-2:hover {
+        transform: scale(1);
+    }
+
+    .Get-in-touch:hover {
+        padding: 0.5rem;
+        background-color: #e6bd43;
+        color: black;
+        text-decoration: none;
+        margin: 1rem;
+    }
+
+    .send-message:hover {
+        padding: 0.5rem;
+        background-color: #e6bd43;
+        color: black;
+        text-decoration: none;
     }
 
 }
-

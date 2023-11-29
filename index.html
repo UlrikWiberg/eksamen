@@ -2,27 +2,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webdesign">
+    <meta property="og:title" content="kontor" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://schema.org/AggregateRating" />
+    <meta property="og:image" content="https://pixabay.com/no/photos/penn-notisbok-notisblokk-dagbok-4337521/" />
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="shortcut icon" href="img/ressurser/ressurser/logo1.png">
-    <script defer src="script.js"></script>
     <title>Forside</title>
 </head>
 <body>
     <header>
-        <img src="img/ressurser/ressurser/logo1.png" id="Logo" alt="logo">
-        <nav>
+        <a href="index.html"><img src="img/ressurser/ressurser/logo1.png" id="Logo" alt="logo"></a>
+        <nav aria-label="navigasjon">
         <ul>
-            <li><a href="index.html" class="Home">Home</a></li>
-            <li><a href="portfolio.html" class="Portfolio">Portfolio</a></li>
-            <li><a href="about.html" class="About">About</a></li>
+            <li><a href="index.html" class="activeLink">Home</a></li>
+            <li><a href="products.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="about.html#Contact-us" class="contact">Contact</a></li>
         </ul>
         </nav>
     </header>
-    <a href="index.html" class="tilbake"><i class="fa-solid fa-arrow-up"></i></a>
+    <a href="index.html" class="tilbake" aria-label="til toppen"><i class="fa-solid fa-arrow-up"></i></a>
     <main>
         <div class="headline">
         <section>
@@ -34,11 +38,11 @@
             </video>
         </section>
         </div>
-        <article class="subheading">
+        <article class="subheading" aria-label="sub overskrift">
             <h2>Engaging subheading</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Aliquet nec ullamcorper sit amet risus nullam. Vitae et leo duis ut diam. Enim tortor at auctor urna nunc. Mattis aliquam faucibus purus in massa tempor. Facilisi etiam dignissim diam quis enim lobortis</p>
         </article>
-        <section class="sec1">
+        <section class="sec1" aria-label="om vår bedrfit">
             <img src="img/ressurser/400.png" alt="grå placeholder">
             <article class="service-right">
                 <h2>About our company</h2>
@@ -47,44 +51,46 @@
             </article>
         </section>
         <h2>Our services</h2>
-        <section id="services">
-            <article>
+        <section id="services" aria-label="våre tjenester">
+            <article aria-label="merke">
                 <i class="fa-solid fa-users"></i>
                 <h3>Branding</h3>
                 <p>Lorem ipsum dolor sit amet, consctetur adipiscing elit</p>
             </article>
-            <article>
+            <article aria-label="design">
                 <i class="fa-solid fa-cloud-arrow-up"></i>
                 <h3>Design</h3>
                 <p>Lorem ipsum dolor sit amet, consctetur adipiscing elit</p>
             </article>
-            <article>
+            <article aria-label="utvikling">
                 <i class="fa-solid fa-code"></i>
                 <h3>Development</h3>
                 <p>Lorem ipsum dolor sit amet, consctetur adipiscing elit</p>
             </article>
-            <article>
+            <article aria-label="støtte">
                 <i class="fa-solid fa-wifi"></i>
                 <h3>Support</h3>
                 <p>Lorem ipsum dolor sit amet, consctetur adipiscing elit</p>
             </article>
         </section>
-        <section class="signup">
+        <section class="signup" aria-label="få nyheter">
             <h2>Sign up for our newsletter</h2>
             <form id="email">
                 <input type="text" id="epost" placeholder="nora@epost.no">
-                <label for="email" class="sign-me-up">sign me up!</label>
+                <a href="#" class="sign-me-up">sign me up!</a>
             </form>
         </section>
     </main>
+    <div class="grid-container">
     <footer>
-        <img src="img/ressurser/ressurser/logo1.png" id="Logo-footer" alt="logo">
+        <a href="indx.html"><img src="img/ressurser/ressurser/logo1.png" id="Logo-footer" alt="logo"></a>
         <h2>Company copyright 2023</h2>
-        <ul>
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
+        <ul aria-label="våre sosiale medier">
+            <li aria-label="link til vår facebook"><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+            <li aria-label="link til vår instagram"><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+            <li aria-label="link til vår linkedin"><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
         </ul>
-    </footer>   
+    </footer>
+    </div>   
 </body>
 </html>
